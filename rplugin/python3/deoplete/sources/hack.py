@@ -10,7 +10,7 @@ TOKEN = 'AUTO332'
 class Source(Base):
     def __init__(self, vim):
         Base.__init__(self, vim)
-        self.filetypes = ['php']
+        self.filetypes = ['php', 'hack']
         self.input_pattern = r'\w+|[^. \t]->\w*|\w+::\w*|\w\([\'"][^\)]*|\w\(\w*|\\\w*|\$\w*'
         self.mark = '[Hack]'
         self.name = 'hack'
